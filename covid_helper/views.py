@@ -6,8 +6,17 @@ def home(request):
 	return render(request, 'covid_helper/home.html')
 
 def about(request):
-	messages.success(request, "This is about")
-	return render(request,'covid_helper/about.html')
+	return render(request,'covid_helper/abts.html')
+
+def registration(request):
+	return render(request,'covid_helper/registration.html')
+
+def appointment(request):
+	return render(request,'covid_helper/appointment.html')
+
+def doctors(request):
+	return render(request,'covid_helper/doctors.html')
+
 
 def contact(request):
 	messages.success(request, 'Welcome to contact')
