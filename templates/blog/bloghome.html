@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %} Blog-Home {% endblock title %}
+{% block blogactive %}active{% endblock blogactive %}
+{% block body %}
+
+<div class="container my-3">
+	<h2> BLOG POSTS</h2>
+	{% for post in allPosts %}
+	<div class=" row no-gutters border rounded overflow-hidden flex-md-row my-4 shadow sm h-md-250 position-relative">
+		<div class="col p-4 d-flex flex-column position-static">
+			<strong class="d-inline-block mb-2 text-primary"><a class="text-dark" href="/blog/{{ post.slug }}">Title:{{ post.title }}</a></strong>
+			<strong class="d-inline-block mb-2 text-primary">Requirement:{{ post.requirment| truncatechars:300 }}</strong>
+			<h3 class="mb-0 ">{{ post.title}}</h3>
+			<p class="card-text mb-auto">Comment Your Details below:Name,Age,Requirement</p>
+			<div class="mb-1 text-muted">If you need, Write your need with Details</div>
+			<div class="my-2">
+				<button><a href="/blog/{{ post.slug }}" class="btn btn-primarys" role="button">Continue</a></button>
+			</div>
+			<!-- <div class="col-auto d-none d-lg-block">
+				
+			</div> -->
+		</div>
+	</div>
+{% endfor %}
+</div>
+{% endblock body %}
