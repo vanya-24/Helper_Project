@@ -48,7 +48,7 @@ nav{
 /*Styling Links*/
 .nav-links{
     display: flex;
-    list-style: none; 
+    list-style: none;
     width: 88vw;
     padding: 0 0.7vw;
     justify-content: space-evenly;
@@ -150,6 +150,7 @@ nav{
         -webkit-clip-path: circle(50px at 90% -10%);
         transition: all 1s ease-out;
         pointer-events: none;
+        color: #61DAFB;
     }
     .nav-links.open{
         clip-path: circle(1000px at 90% -10%);
@@ -157,33 +158,30 @@ nav{
         pointer-events: all;
     }
     .nav-links li{
-        opacity: 0;
+        opacity: 1;
     }
     .nav-links li:nth-child(1){
-        transition: all 0.5s ease 0.2s;
+        transition: all 10s ease 1s;
     }
     .nav-links li:nth-child(2){
-        transition: all 0.5s ease 0.4s;
+        transition: all 10s ease 1s;
     }
     .nav-links li:nth-child(3){
-        transition: all 0.5s ease 0.6s;
+        transition: all 10s ease 1s;
     }
     .nav-links li:nth-child(4){
-        transition: all 0.5s ease 0.7s;
+        transition: all 10s ease 1s;
     }
     .nav-links li:nth-child(5){
-        transition: all 0.5s ease 0.8s;
+        transition: all 10s ease 1s;
     }
     .nav-links li:nth-child(6){
-        transition: all 0.5s ease 0.9s;
+        transition: all 10s ease 1s;
         margin: 0;
     }
     .nav-links li:nth-child(7){
         transition: all 0.5s ease 1s;
         margin: 0;
-    }
-    li.fade{
-        opacity: 1;
     }
 }
 /*Animating Hamburger Icon on Click*/
@@ -378,7 +376,7 @@ ul {
     <title>{% block title %} {% endblock title %}</title>
 </head>
 <body>
-	
+
          <nav>
         <div class="logo">
             <img src="https://www.vitalitygroup.com/wp-content/uploads/2020/03/In-This-Together_logo.png" alt="Logo Image">
@@ -404,7 +402,7 @@ ul {
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="/logout">Logout</a>
                     </div>
-                    
+
                 </li>
             </ul>
             {% else %}
@@ -503,7 +501,7 @@ ul {
 
 	<div >{% block content %}{% endblock content %}</div>
 
-     
+
      <footer class="footer-section">
         <div class="container">
             <div class="footer-cta pt-5 pb-5">
@@ -512,8 +510,8 @@ ul {
                         <div class="single-cta">
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="cta-text">
-                                <h4>Find us</h4>
-                                <span>xyz</span>
+                                <h4>Developed by:</h4>
+                                <span> Shubha & Vanya</span>
                             </div>
                         </div>
                     </div>
@@ -545,8 +543,7 @@ ul {
                                 <a href="index.html"><img src="https://cdn4.vectorstock.com/i/1000x1000/76/53/versus-vs-design-blue-neon-logo-template-vector-23917653.jpg" class="img-fluid" alt="logo"></a>
                             </div>
                             <div class="footer-text">
-                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
-                                elit,Lorem ipsum dolor sit amet.</p>
+                                <p>We decided a great way to bring awareness and still socially distance would be to do a chalk action.</p>
                             </div>
                             <div class="footer-social-icon">
                                 <span>Follow us</span>
@@ -564,8 +561,6 @@ ul {
                             <ul>
                                 <li><a href="#">Home</a></li>
                                 <li><a href="#">about</a></li>
-                                <li><a href="#">services</a></li>
-                                <li><a href="#">portfolio</a></li>
                                 <li><a href="#">Contact</a></li>
                                 <li><a href="#">About us</a></li>
                                 <li><a href="#">Our Services</a></li>
@@ -597,11 +592,7 @@ ul {
         <div class="copyright-area">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                        <div class="copyright-text">
-                            <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
-                        </div>
-                    </div>
+
                     <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
                         <div class="footer-menu">
                             <ul>
@@ -634,12 +625,10 @@ ul {
 });
 </script>
 
-	
+
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
      <script type="text/javascript">
 
-</body>
-</html>
